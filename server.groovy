@@ -22,6 +22,7 @@ while (true) {
     rawdataout = ("ACK for " + datain).getBytes();
     DatagramPacket packetout = new DatagramPacket(rawdataout, rawdataout.length, addr, port);
     socket.send(packetout);
+    socket.disconnect();
     socket.close();
     println("socket was closed");
     socket = null;
