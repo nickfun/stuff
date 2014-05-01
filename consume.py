@@ -14,10 +14,10 @@ channel.queue_declare(queue='hello')
 print ' [*] Waiting for message. Use ctrl-C to exit. A number is %d' % (num,)
 
 def callback(ch, method, prop, body):
-    rnum = random.randint(0,4)
+    rnum = body.count('.')
     print " [*] Received Message! `%r` now sleep %d seconds" % (body,rnum)
     time.sleep(rnum)
-    print " [*] Sleep is over!"
+    #print " [*] Sleep is over!"
 
 channel.basic_consume(callback, queue='hello',no_ack=True)
 
