@@ -13,7 +13,7 @@ def send():
                           body='Hello World!')
     print " [x] Sent 'Hello World!'"
 
-x=10
+x=20
 while x > 0:
     send()
     x = x-1
