@@ -42,3 +42,7 @@ animals
 
 ;; done for today. Line 33 in pdf.    2014-05-09
 
+(> 5 2)
+(> 30 300)
+(eq 4 nil)
+(eq nil ())
