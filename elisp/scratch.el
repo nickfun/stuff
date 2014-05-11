@@ -58,3 +58,13 @@ animals
 (other-buffer)
 (ido-switch-buffer)
 (switch-to-buffer (other-buffer))
+
+
+;; end saturday, 2014-05-10
+
+switch-to-buffer ;; make a buffer the current buffer for the human operator to use
+set-buffer ;; make a buffer active for emacs to manip via elisp code
+(buffer-size)
+(point)
+(point-min)  ;; earliest position in the buffer we can edit?
+
