@@ -86,3 +86,6 @@ set-buffer ;; make a buffer active for emacs to manip via elisp code
 
 ;; === page 44
 
+;; zenburn theme
+;; solarized theme
+;; solarized-dark theme
