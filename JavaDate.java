@@ -23,8 +23,11 @@ class JavaDate {
 	    Calendar.SATURDAY,
 	    Calendar.SUNDAY
 	};
-	for (int i : DaysToJava) {
-	    System.out.println(i + ": " + DaysToJava[i]);
+	int i=0;
+	while (i<DaysToJava.length) {
+	    System.out.println( i +": " + DaysToJava[i]);
+	    i++;
 	}
+	System.out.println("Jan is " + Calendar.JANUARY);
     }
 }
