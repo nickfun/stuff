@@ -98,3 +98,15 @@ set-buffer ;; make a buffer active for emacs to manip via elisp code
 ; interactive "p" -- pass in value with C-u <number>
 
 ; whats the benefit of (interactive) with no parameters???
+
+; (let _var list_ _body_)
+(let 
+    ((w 1)
+     x  ; x will get the `nil` value
+     (y 3))
+    (message "Hello %d %s %s" w x y))
+;; the nil value should be treated as a string when used with (message)
+w
+
+; special forms: defun, let
+
