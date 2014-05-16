@@ -86,3 +86,29 @@ set-buffer ;; make a buffer active for emacs to manip via elisp code
 
 ;; === page 44
 
+(defun mult-by-7 (number)
+  "Multiply passed in number by seven"
+  (*+ number number number number number number number ))
+
+(defun mult-by-7 (num)
+  "Multiply a number by seven, interactive :)"
+  (interactive "p")  ;; "p" flag means pass a prefix argument
+  (message "The result is %d" (* num 7)))
+
+; interactive "p" -- pass in value with C-u <number>
+
+; whats the benefit of (interactive) with no parameters???
+
+; (let _var list_ _body_)
+(let 
+    ((w 1)
+     x  ; x will get the `nil` value
+     (y 3))
+    (message "Hello %d %s %s" w x y))
+;; the nil value should be treated as a string when used with (message)
+w
+
+; special forms: defun, let
+
+; === page 50
+
