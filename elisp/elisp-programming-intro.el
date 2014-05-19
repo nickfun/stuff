@@ -114,3 +114,13 @@ w
 
 (if (> 5 4)
     (message "Five is greater than four"))
+
+(defun type-of-animal (property)
+  "return type of animal as string, I think"
+  (if (equal property 'fierce)
+      "It is a Tiger!"
+    "It is a Zebra!"))
+
+(type-of-animal 'sleepy)
+(type-of-animal 'fierce)
+    
