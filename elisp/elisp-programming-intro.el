@@ -1,3 +1,12 @@
+;; Learning Emacs
+;;
+;; May, 2014
+;;
+;; Resource: http://www.gnu.org/software/emacs/manual/pdf/eintr.pdf
+;; other resource: http://daemianmack.com/magit-cheatsheet.html
+;;
+
+
 '(hello world)
 
 ; form is used as a synonym for expresson and s-expression
