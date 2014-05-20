@@ -1,3 +1,8 @@
+/**
+ * Simple thing to see if Groovy threads are as easy as Java threads
+ *
+ * @date 2014-05-20
+ */
 class Example extends Thread {
   public static void main(args) {
     println("hello");
@@ -5,7 +10,7 @@ class Example extends Thread {
     Example mythread;
     while (i>0) {
       mythread = new Example();
-      mythread.run();
+      mythread.start(); 
       println("---");
       i--;
     }
@@ -18,3 +23,4 @@ class Example extends Thread {
     println("I am done :)");
   }
 }
+
