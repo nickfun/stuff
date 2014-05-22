@@ -147,6 +147,15 @@ w
 ;; mark is a place that the cursor was at and the user wants to remember
 ;; `save-excursion` is function that remembers these things so we can
 ;; change the point/mark and later restore it to what the user had
+;; save-excursion is a special form
 
 ;; this is fun: M-x nato-region
-;;                  November-Alfa-Tango-Oscar-Dash-Romeo-Echo-Golf-India-Oscar-November
+;;                  November-Alfqa-Tango-Oscar-Dash-Romeo-Echo-Golf-India-Oscar-November
+
+(buffer-file-name)   ; returns `nil` if no file
+
+(defun x2 (x) "doubles a given number" (interactive) (* 2 x))
+(x2 3)
+
+(setq name "Nick") 
+; begin chapter 4
