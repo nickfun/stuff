@@ -133,3 +133,18 @@ w
 (type-of-animal 'sleepy)
 (type-of-animal 'fierce)
     
+(if (> 4 5) ; if...
+    (message "four is bigger than five") ; then...
+  (message "five is bigger than four") ; else...
+)
+
+;; false is `nil`
+;; anything other than `nil` is true!!
+
+(if 0 (message "zero is true") (message "zero is false"))
+
+;; point is current location of cursor
+;; mark is a place that the cursor was at and the user wants to remember
+;; `save-excursion` is function that remembers these things so we can
+;; change the point/mark and later restore it to what the user had
+
