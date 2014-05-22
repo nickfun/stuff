@@ -148,3 +148,5 @@ w
 ;; `save-excursion` is function that remembers these things so we can
 ;; change the point/mark and later restore it to what the user had
 
+;; this is fun: M-x nato-region
+;;                  November-Alfa-Tango-Oscar-Dash-Romeo-Echo-Golf-India-Oscar-November
