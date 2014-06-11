@@ -1,0 +1,6 @@
+{
+	"require": {
+		"j4mie/idiorm": "*",
+		"slim/slim": "2.*"
+	}
+}
