@@ -2,10 +2,21 @@
 
 require_once 'vendor/autoload.php';
 
+// Database Config
+// ===============
+
+ORM::configure("sqlite:./checkboxes.db");
+
+// Define Routes
+// =============
+
 $app = new \Slim\Slim();
 
 $app->get("/", function() {
-	return "Hello!";
+	echo "Hello!";
 });
+
+// Exec Application
+// ================
 
 $app->run();
