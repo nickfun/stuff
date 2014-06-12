@@ -5,41 +5,22 @@ require_once 'vendor/autoload.php';
 // Application Config
 // ==================
 
-$SQL_DATABASE = "./checkboxes.sqlite";
-error_reporting(E_ALL);
+$DB_HOST = 'localhost';
+$DB_PORT = 3600;
+$DB_USER = 'root';
+$DB_PASS = 'securedatabase';
+$DB_NAME = 'checkbox';
 
 // Database Config
 // ===============
 
-ORM::configure("sqlite:$SQL_DATABASE");
+ORM::configure("mysql:host=$DB_HOST;dbname=$DB_NAME");
+ORM::configure("username", $DB_USER);
+ORM::configure("password", $DB_PASS);
 
 // Helper Functions
 // ================
 
-function initDatabase() {
-	echo "Begin init database";
-	$createItems = "
-		CREATE TABLE IF NOT EXISTS items (
-			id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-			title VARCHAR NOT NULL UNIQUE,
-			status INTEGER NOT NULL,
-			collection_id INTEGER NOT NULL
-		);
-	";
-	$createCollections = "
-		CREATE TABLE IF NOT EXISTS collections (
-			id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-			name VARCHAR NOT NULL UNIQUE
-		);
-	";
-	echo $createItems;
-	$db = ORM::get_db();
-	print_r($db);
-	$r = $db->exec($createItems);
-	echo "create 1: $r<hr>";
-	$r = $db->exec($createCollections);
-	echo "create 2: $r<hr>";	
-}
 
 // Define Routes
 // =============
@@ -50,6 +31,39 @@ $app->get("/", function() {
 	echo "Hello!";
 });
 
+$app->get("/group/:id", function($id) {
+		$id = (int) $id;
+		$group = ORM::for_table("groups")->find_one($id);
+		$items = ORM::for_table("items")->where("group_id",$id)->find_many();
+		echo "<h1>Group: " . $group->name . "</h1> <ul>";
+		foreach ($items as $item) {
+			$s = $item->state == 1 ? "CHECKED" : "UN CHEC";
+			printf("<li>%s - %s</li>", $s, $item->title);
+		}
+		echo "</ul>";
+	});
+
+$app->get("/groups", function() {
+		$groups = ORM::for_table("groups")->find_many();
+		foreach ($groups as $g) {
+			printf("ID: %d NAME: %s<br>", $g->id, $g->name);
+		}
+	});	
+
+$app->get("/new-group", function() {
+		$group = ORM::for_table("groups")->create();
+		$group->name = "Hello " . date('r');
+		$group->save();
+
+		for ($i=0; $i<10; $i++) {
+			$item = ORM::for_table("items")->create();
+			$item->title = "I am item $i";
+			$item->group_id = $group->id;
+			$item->save();
+		}
+		echo "Created: " . $group->id;
+	});
+
 $app->get("/phpinfo", function() {
 		phpinfo();
 	});
@@ -57,9 +71,5 @@ $app->get("/phpinfo", function() {
 // Exec Application
 // ================
 
-if (!file_exists($SQL_DATABASE)) {
-	echo "No Database";
-	initDatabase();
-}
 
 $app->run();
