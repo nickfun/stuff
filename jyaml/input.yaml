@@ -1,0 +1,12 @@
+---
+packets:
+  - type: 0x9a
+    date: 2013-05-13
+    time: 11:10:15
+    lat: -194.21
+    lng: 192
+  - type: 0x9a
+    time: 11:10:45
+    lat: -194,211
+    lng: 192.04
+...
