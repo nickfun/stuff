@@ -1,12 +1,18 @@
 ---
+config:
+  ccid: 0xA0000063
+  atpurl: localhost:2100  # maybe, I need to look this up.
 packets:
-  - type: 0x9a
+  - typeid: 1
+    objectid: 2
+    asn1: 3
     date: 2013-05-13
     time: 11:10:15
     lat: -194.21
     lng: 192
-  - type: 0x9a
+  - typeid: 4
+    objectid: 5
+    asn1: 6
     time: 11:10:45
     lat: -194,211
     lng: 192.04
-...
