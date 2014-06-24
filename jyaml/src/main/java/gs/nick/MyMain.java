@@ -5,9 +5,14 @@ import java.io.*;
 import java.util.Map;
 import java.util.List;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class MyMain {
     public static void main( String[] args) throws FileNotFoundException {
+
+        // ALWAYS be explicit about timezones because Timezones are terrible and want to hurt you
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        
 	System.out.println("Hello");
 	System.out.println("World");
 
