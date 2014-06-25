@@ -1,6 +1,6 @@
 ---
 config:
-  ccid: 0xA0000063
+  ccid: 123456
   atphost: localhost
   atpport: 2100
 

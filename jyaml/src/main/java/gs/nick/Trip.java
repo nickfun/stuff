@@ -3,15 +3,15 @@ package gs.nick;
 import java.util.List;
 
 class Trip {
-    Config cfg;
+    Config config;
     List<Packet> packets;
     
-    public void setCfg( Config c ) {
-        cfg = c;
+    public void setConfig( Config c ) {
+        config = c;
     }
 
-    public Config getCfg() {
-        return cfg;
+    public Config getConfig() {
+        return config;
     }
 
     public void setPackets( List<Packet> p ) {
