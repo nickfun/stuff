@@ -1,31 +1,32 @@
 package gs.nick;
 
 class Config {
-    public int ccid;
-    public String atphost;
-    public int atpport;
 
-    public void setCcid(int c) {
-        ccid = c;
-    }
+	public int ccid;
+	public String atphost;
+	public int atpport;
 
-    public int getCcid() {
-        return ccid;
-    }
+	public void setCcid(int c) {
+		ccid = c;
+	}
 
-    public void setAtphost(String a) {
-        atphost = a;
-    }
+	public int getCcid() {
+		return ccid;
+	}
 
-    public String getAtphost() {
-        return atphost;
-    }
+	public void setAtphost(String a) {
+		atphost = a;
+	}
 
-    public void setAtpport(int p){
-        atpport = p;
-    }
+	public String getAtphost() {
+		return atphost;
+	}
 
-    public int getAtpport() {
-        return atpport;
-    }
+	public void setAtpport(int p) {
+		atpport = p;
+	}
+
+	public int getAtpport() {
+		return atpport;
+	}
 }
