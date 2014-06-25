@@ -15,7 +15,10 @@ public class MyMain {
         // ALWAYS be explicit about timezones because Timezones are terrible and want to hurt you
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
-	test();
+	//test();
+
+        PacketLoader loader = new PacketLoader();
+        loader.loadFile();
     }
 
     public static void test() throws FileNotFoundException {
