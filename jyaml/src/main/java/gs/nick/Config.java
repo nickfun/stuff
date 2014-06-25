@@ -2,31 +2,31 @@ package gs.nick;
 
 class Config {
 
-	public int ccid;
-	public String atphost;
-	public int atpport;
+	public int deviceid;
+	public String backendhost;
+	public int backendport;
 
-	public void setCcid(int c) {
-		ccid = c;
+	public void setDeviceid(int d) {
+		deviceid = d;
 	}
 
-	public int getCcid() {
-		return ccid;
+	public int getDeviceid() {
+		return deviceid;
 	}
 
-	public void setAtphost(String a) {
-		atphost = a;
+	public void setBackendhost(String a) {
+		backendhost = a;
 	}
 
-	public String getAtphost() {
-		return atphost;
+	public String getBackendhost() {
+		return backendhost;
 	}
 
-	public void setAtpport(int p) {
-		atpport = p;
+	public void setBackendport(int p) {
+		backendport = p;
 	}
 
-	public int getAtpport() {
-		return atpport;
+	public int getBackendport() {
+		return backendport;
 	}
 }

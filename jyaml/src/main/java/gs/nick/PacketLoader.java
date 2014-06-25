@@ -31,7 +31,7 @@ class PacketLoader {
 		cons.addTypeDescription(configDesc);
 		cons.addTypeDescription(tripDesc);
 		cons.addTypeDescription(packetDesc);
-
+		
 		System.out.println("???");
 
 		InputStream is = new FileInputStream(new File(inputFile));

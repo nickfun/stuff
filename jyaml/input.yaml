@@ -1,20 +1,20 @@
 ---
 config:
-  ccid: 123456
-  atphost: localhost
-  atpport: 2100
+  deviceid: 123456
+  backendhost: localhost
+  backendport: 2100
 
 packets:
   - typeid: 1
     objectid: 2
     asn1: 3
     date: 2013-05-13 11:10:15
-    lat: -194.21
-    lng: 192.0
+    lat: 37.527
+    lng: -121.994
 
   - typeid: 4
     objectid: 5
     asn1: 6
     date: 2013-05-13 11:10:45
-    lat: -194.211
-    lng: 192.04
+    lat: 37.531
+    lng: -122.002

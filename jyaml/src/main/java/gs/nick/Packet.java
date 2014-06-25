@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Packet {
 
-	int typeid;
-	int objectid;
-	int asn1;
-	Date date;
-	float lat;
-	float lng;
+	public int typeid;
+	public int objectid;
+	public int asn1;
+	public Date date;
+	public float lat;
+	public float lng;
 
 }
