@@ -1,6 +1,8 @@
 package gs.nick;
 
+import org.yaml.snakeyaml.constructor.SafeConstructor;
 import org.yaml.snakeyaml.Yaml;
+
 import java.io.*;
 import java.util.Map;
 import java.util.List;
@@ -12,9 +14,6 @@ public class MyMain {
 
         // ALWAYS be explicit about timezones because Timezones are terrible and want to hurt you
         TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-        
-	System.out.println("Hello");
-	System.out.println("World");
 
 	test();
     }
