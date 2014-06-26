@@ -9,7 +9,7 @@ import org.yaml.snakeyaml.Yaml;
 
 class PacketLoader {
 
-	private final String inputFile = "input.yaml";
+	private final String inputFile = "input2.yaml";
 	
 	public void loadFile() throws FileNotFoundException {
 	
