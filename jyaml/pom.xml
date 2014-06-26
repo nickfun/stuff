@@ -9,10 +9,11 @@
     <artifactId>learn-yaml</artifactId>
     <dependencies>
       <dependency>
-	<groupId>org.yaml</groupId>
-	<artifactId>snakeyaml</artifactId>
-	<version>1.10</version>
+		<groupId>org.yaml</groupId>
+		<artifactId>snakeyaml</artifactId>
+		<version>1.10</version>
       </dependency>
+      
       <dependency>
 	<groupId>mysql</groupId>
 	<artifactId>mysql-connector-java</artifactId>
@@ -53,7 +54,7 @@
 	    <target>1.7</target>
 	  </configuration>
 	</plugin>
-	
+	<!--
 	<plugin>
 	  <groupId>org.apache.maven.plugins</groupId>
 	  <artifactId>maven-assembly-plugin</artifactId>
@@ -74,7 +75,7 @@
 	    </execution>
 	  </executions>
 	</plugin>
-	
+	-->
       </plugins>
     </build>
 
