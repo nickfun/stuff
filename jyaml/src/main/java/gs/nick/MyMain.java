@@ -16,8 +16,10 @@ public class MyMain {
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
 
 		//test();
+		
 		PacketLoader loader = new PacketLoader();
 		loader.loadFile();
+
 	}
 
 	public static void test() throws FileNotFoundException {

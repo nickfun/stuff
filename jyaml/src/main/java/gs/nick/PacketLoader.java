@@ -2,13 +2,7 @@ package gs.nick;
 
 import java.util.*;
 import java.io.*;
-/*
- import org.yaml.snakeyaml.TypeDescription;
- import org.yaml.snakeyaml.Util;
- import org.yaml.snakeyaml.nodes.Tag;
- import org.yaml.snakeyaml.representer.Representer;
- import org.yaml.snakeyaml.constructor.*;
- */
+
 import org.yaml.snakeyaml.constructor.Constructor;
 import org.yaml.snakeyaml.TypeDescription;
 import org.yaml.snakeyaml.Yaml;
@@ -16,8 +10,19 @@ import org.yaml.snakeyaml.Yaml;
 class PacketLoader {
 
 	private final String inputFile = "input.yaml";
-
+	
 	public void loadFile() throws FileNotFoundException {
+	
+		Yaml y = new Yaml(new Constructor(Trip.class));
+		InputStream is = new FileInputStream(new File(inputFile));
+		
+		Trip t = (Trip) y.load(is);
+		
+		System.out.println("Packet Count: " + t.packets.size());
+	
+	}
+
+	public void loadFileBad() throws FileNotFoundException {
 		System.out.println("I should load file " + inputFile);
 
 		Constructor cons = new Constructor(Trip.class);
@@ -38,7 +43,7 @@ class PacketLoader {
 		Yaml yaml = new Yaml(cons);
 		Trip trip = (Trip) yaml.load(is);
 
-		System.out.println("I have this many packets: " + trip.getPackets().size());
+		System.out.println("I have this many packets: " + trip.packets.size());
 	}
 
 }
