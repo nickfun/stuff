@@ -15,9 +15,6 @@ packets:
   - typeid: 4
     objectid: 5
     asn1: 6
-    date: 2013-05-13 11:10:45
-    lat: 37.531
-    lng: -122.002
 
   - typeid: 1
     objectid: 2
