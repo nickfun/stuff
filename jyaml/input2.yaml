@@ -5,7 +5,7 @@ config:
   backendport: 2100
 
 packets:
-  - typeid: 1
+  - typeid: 0x9a
     objectid: 2
     asn1: 3
     date: 2013-05-13 11:10:15
@@ -15,6 +15,7 @@ packets:
   - typeid: 4
     objectid: 5
     asn1: 6
+#    problem: 321
 
   - typeid: 1
     objectid: 2
