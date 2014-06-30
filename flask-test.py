@@ -15,6 +15,10 @@ def index():
 def hello():
     return "I am static"
 
+@app.route("/msg/<s>")
+def msg(s):
+    return "Your message is <b>%s</b><br>I hope you enjoyed the message!" % s
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
 
