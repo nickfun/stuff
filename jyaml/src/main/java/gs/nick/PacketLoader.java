@@ -19,6 +19,10 @@ class PacketLoader {
 		Trip t = (Trip) y.load(is);
 		
 		System.out.println("Packet Count: " + t.packets.size());
+
+                for (Packet p : t.packets) {
+                    System.out.println(p.toString());
+                }
 	
 	}
 
