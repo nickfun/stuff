@@ -17,3 +17,6 @@ a fast moving industry.
 * Groovy is pretty neat
 * RabbitMQ is just as simple as the tutorial made it seem
 * It is easy to forget the basics
+* The docs for Snake Yaml are not the best
+* Static Typed Java is great at work for big projects but not easy to get something going quick
+
