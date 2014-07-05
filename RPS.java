@@ -45,8 +45,14 @@ public class RPS {
     }    
 
     public static void main( String[] args ) {
-	for( int i=0; i<30; i++ ) {
-	    sayWinner( getComputerChoice(), getComputerChoice() );
+        int limit = 10;
+        int i=0;
+        if (args.length >= 1) {
+            limit = new Integer(args[0]);
+        }
+        System.out.println("Limit is " + limit);
+	for( i=0; i<limit; i++ ) {
+            //	    sayWinner( getComputerChoice(), getComputerChoice() );
 	}
     }
 }
