@@ -89,3 +89,5 @@ set-buffer ;; make a buffer active for emacs to manip via elisp code
 ;; zenburn theme
 ;; solarized theme
 ;; solarized-dark theme
+
+;; 2014-07-05, I need a different place to learn elisp, I dont like the pdfx
