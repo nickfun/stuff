@@ -8,7 +8,6 @@ import java.util.*;
 
 class One {
     public static void main(String[] args) {
-        //        System.out.println("hello");
         for( String w : args ) {
             if (isUniqueCharsNoMap(w) ) {
                 System.out.println(w + " passed");
@@ -23,14 +22,12 @@ class One {
     public static boolean isUniqueChars(String str) {
         char[] letters = str.toCharArray();
         Integer count;
-        HashMap<Character, Integer> map = new HashMap<>();
+        HashSet<Character> set = new HashSet<>();
         for (char c : letters) {
-            count = map.get(c);
-            if (count == null || count == 0) {
-                map.put(c,1);
-            } else {
+            if (set.contains(c)) {
                 return false;
             }
+            set.add(c);
         }
         return true;
     }
