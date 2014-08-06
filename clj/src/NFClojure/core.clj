@@ -11,3 +11,9 @@
           (inc-more (rest nums)))
     ; ELSE: nums is empty, return empty list
     (list)))
+
+(def myhash
+  {:name "nick"
+   :age 3456
+   :place "SF Bay"
+   :computer "laptop"})
