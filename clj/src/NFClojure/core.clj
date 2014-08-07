@@ -17,3 +17,6 @@
    :age 3456
    :place "SF Bay"
    :computer "laptop"})
+
+(def myvec
+  [1 2 3 4 5 6 7 8 9 10])
