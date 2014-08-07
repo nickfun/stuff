@@ -20,3 +20,12 @@
 
 (def myvec
   [1 2 3 4 5 6 7 8 9 10])
+
+(defn four? [x] (= 0 (mod x 4)))
+
+(defn double [x] (* 2 x))
+
+(->>
+  myvec
+  (filter four?)
+  (map double))
