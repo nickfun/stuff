@@ -1,13 +1,13 @@
 # NFClojure
 
-FIXME: write description
+Leiningen project to play around with Clojure
 
 ## Usage
 
-FIXME: write
+    $ lein repl
 
 ## License
 
-Copyright (C) 2014 FIXME
+Copyright (C) 2014 Nickfun
 
 Distributed under the Eclipse Public License, the same as Clojure.
