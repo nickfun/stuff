@@ -8,7 +8,7 @@ def index():
     while num>1:
         num = num - 1
         str = "%s %d " % (str, num)
-    str = str + "\n"
+    str = "The http body is " + str + "\n"
     return str
 
 @app.route("/hello")
