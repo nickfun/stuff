@@ -36,7 +36,7 @@ public class TPool {
 
     public void execute() throws Exception {
         int NUM = 40;
-        ExecutorService pool = Executors.newFixedThreadPool(NUM / 2);
+        ExecutorService pool = Executors.newFixedThreadPool(NUM / 6);
         List<BigJob> jobs = new ArrayList<BigJob>();
         List<Future<String>> answers;
         for (int i=0; i<NUM; i++) {
@@ -46,6 +46,7 @@ public class TPool {
         Thread.sleep(1000);
         System.out.println("GO!");
         answers = pool.invokeAll(jobs);
+        System.out.println("Have Gone!");
         for (Future<String> f : answers) {
             System.out.println("a result: " + f.get());
         }
