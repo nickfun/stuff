@@ -7,9 +7,6 @@ public class BigJob implements Callable<String> {
         int n = ThreadLocalRandom.current().nextInt(500);
         Thread.sleep(500+n);
         System.out.print("**");
-        if (n < 0) {
-            n = n * -1;
-        }
-        return "" + n;
+        return "" + (500+n);
     }
 }

@@ -41,20 +41,22 @@ public class TPool {
     }
 
     public void execute() throws Exception {
-        int NUM = 40;
-        ExecutorService pool = Executors.newFixedThreadPool(NUM / 6);
+        int NUM_JOBS = 40;
+        int NUM_THREADS = NUM_JOBS / 7;
+        ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
         List<BigJob> jobs = new ArrayList<BigJob>();
         List<Future<String>> answers;
-        for (int i=0; i<NUM; i++) {
+        for (int i=0; i<NUM_JOBS; i++) {
             jobs.add( new BigJob() );
         }
         System.out.println("wait");
+        System.out.println(String.format("Jobs: %d  Threads: %d", NUM_JOBS, NUM_THREADS));
         Thread.sleep(1000);
         System.out.println("GO!");
         answers = pool.invokeAll(jobs);
         System.out.println("\ninvokeAll has been called");
         for (Future<String> f : answers) {
-            System.out.print(f.get());
+            System.out.print(f.get() + " ");
         }
         pool.shutdown();
     }
