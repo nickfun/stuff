@@ -41,8 +41,8 @@ public class TPool {
     }
 
     public void execute() throws Exception {
-        int NUM_JOBS = 40;
-        int NUM_THREADS = NUM_JOBS / 7;
+        int NUM_JOBS = 20; // this many of each TYPE of job will be created
+        int NUM_THREADS = NUM_JOBS / 3;
         ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
         List<Callable<String>> jobs = new ArrayList<>();
         List<Future<String>> answers;
