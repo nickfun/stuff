@@ -44,10 +44,11 @@ public class TPool {
         int NUM_JOBS = 40;
         int NUM_THREADS = NUM_JOBS / 7;
         ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
-        List<BigJob> jobs = new ArrayList<BigJob>();
+        List<Callable<String>> jobs = new ArrayList<>();
         List<Future<String>> answers;
         for (int i=0; i<NUM_JOBS; i++) {
             jobs.add( new BigJob() );
+            jobs.add( new MediumJob() );
         }
         System.out.println("wait");
         System.out.println(String.format("Jobs: %d  Threads: %d", NUM_JOBS, NUM_THREADS));
