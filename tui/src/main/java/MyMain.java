@@ -17,11 +17,10 @@ class MyMain {
     }
 
     public void execute() throws Exception {
-
         Screen screen = TerminalFacade.createScreen();
         screen.startScreen();
         // draw something ???
-        screen.putString(5,5,"Hello world!", Terminal.Color.Red, Terminal.Color.Green, false, false, false);
+        screen.putString(5,1,"Hello world!", Terminal.Color.RED, Terminal.Color.BLACK, ScreenCharacterStyle.Bold);
         screen.refresh();
         Thread.sleep(3000);
         screen.stopScreen();
