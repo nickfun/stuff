@@ -30,11 +30,11 @@
 
         <plugin>
           <!-- use `mvn exec:java` to run the project -->
-          <groupId>org.codehouse.mojo</groupId>
+          <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>1.2.1</version>
           <configuration>
-            <mainClass>MyMain</mainClass>
+            <mainClass>gs.nick.MyMain</mainClass>
           </configuration>
         </plugin>
 
