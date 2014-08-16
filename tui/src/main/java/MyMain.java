@@ -2,12 +2,14 @@ package gs.nick;
 
 import java.nio.charset.Charset;
 import com.googlecode.lanterna.*;
+import com.googlecode.lanterna.gui.GUIScreen;
 import com.googlecode.lanterna.terminal.*;
 import com.googlecode.lanterna.screen.*;
 //import com.googlecode.lanterna.terminal.Color;
 
-
 class MyMain {
+
+    private GUIScreen gui;
 
     public static void main(String[] args) throws Exception {
         System.out.println("Starting!");
@@ -17,12 +19,24 @@ class MyMain {
     }
 
     public void execute() throws Exception {
-        Screen screen = TerminalFacade.createScreen();
-        screen.startScreen();
-        // draw something ???
-        screen.putString(5,1,"Hello world!", Terminal.Color.RED, Terminal.Color.BLACK, ScreenCharacterStyle.Bold);
-        screen.refresh();
-        Thread.sleep(3000);
-        screen.stopScreen();
+        setup();
+        
+        ScreenWriter sw = new ScreenWriter(gui.getScreen());
+        sw.setBackgroundColor(Terminal.Color.WHITE);
+        sw.setForegroundColor(Terminal.Color.RED);
+        sw.drawString(5, 2, "Hello World!");
+        gui.getScreen().refresh();
+        Thread.sleep(4000);
+        teardown();
+    }
+
+    public void setup() {
+        gui = TerminalFacade.createGUIScreen();
+        gui.getScreen().startScreen();
+        gui.setTitle("TUI is Best UI");
+    }
+
+    public void teardown() {
+        gui.getScreen().stopScreen();
     }
 }
