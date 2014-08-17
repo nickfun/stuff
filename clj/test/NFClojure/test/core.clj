@@ -1,0 +1,6 @@
+(ns NFClojure.test.core
+  (:use [NFClojure.core])
+  (:use [clojure.test]))
+
+(deftest replace-me ;; FIXME: write
+  (is false "No tests have been written."))
