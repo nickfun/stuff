@@ -159,3 +159,15 @@ w
 
 (setq name "Nick") 
 ; begin chapter 4
+
+;; switch/case in elisp
+
+
+(pcase (downcase system-name)
+  ("hosaka" (message "You are on the new laptop"))
+  ("wintermute" (message "You are on the old laptop"))
+  ("corto" (message "You are on the desktop"))
+  ("dualscar" (message "You are on the VPS"))
+  (_ (message "I don't know what computer you are on")))
+
+
