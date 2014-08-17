@@ -170,4 +170,5 @@ w
   ("dualscar" (message "You are on the VPS"))
   (_ (message "I don't know what computer you are on")))
 
+(concat "./emacs.d/systems/" (downcase system-name) ".el")
 
