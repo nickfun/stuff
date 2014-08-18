@@ -172,3 +172,16 @@ w
 
 (concat "./emacs.d/systems/" (downcase system-name) ".el")
 
+;; junk
+
+(defun nf/first-char (str) (substring str 0 1))
+(defun nf/rest-str (str) (substring str 1 nil))
+
+(defun nf/spaceout (str)
+  "Put a space between chars in a string"
+  (if (> (length str) 1)
+      (concat (nf/first-char str) " " (spaceout (nf/rest-str str)))
+    str))
+
+(upcase (nf/spaceout "words words"))
+
