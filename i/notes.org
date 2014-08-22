@@ -1,0 +1,23 @@
+#+TITLE: /stuff/i
+#+AUTHOR: Nick Fun
+#+DATE: <2014-08-22 Fri>
+
+* Interview-style programming snippets
+
+** One.java
+
+Determine if a string has only unique characters
+#+BEGIN_SRC
+javac One.java
+java One <string1> <string2> <string3>
+#+END_SRC
+
+** Two.java
+
+Reverse a string
+
+#+BEGIN_SRC
+javac Two.java
+java Two <string1> <string2> <string3>
+#+END_SRC
+
