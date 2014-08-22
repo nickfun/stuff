@@ -7,7 +7,6 @@
 
 class Two {
     public static void main(String[] args) {
-        System.out.println("hi");
         String r;
         for (String s : args) {
             r = new String(reverse(s));

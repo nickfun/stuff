@@ -10,9 +10,9 @@ class One {
     public static void main(String[] args) {
         for( String w : args ) {
             if (isUniqueCharsNoMap(w) ) {
-                System.out.println(w + " passed");
+                System.out.println(w + " | All Unique");
             } else {
-                System.out.println(w + " failed");
+                System.out.println(w + " | Not All Unique");
             }
         }
         System.out.println("done");
