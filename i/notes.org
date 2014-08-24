@@ -21,3 +21,15 @@ javac Two.java
 java Two <string1> <string2> <string3>
 #+END_SRC
 
+** Three.java
+
+Determine if two strings are permutations of the other
+
+#+BEGIN_SRC
+javac Three.java
+java Three <str_a1> <str_a2> <str_b1> <str_b2>
+#+END_SRC
+
+The way I convert a String to an ArrayList is likely not the best. 
+I need to become more familiar with the Java standard library. I am sure
+there is a more efficent way to convert an array to an ArrayList<Character>.
