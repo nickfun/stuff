@@ -1,0 +1,18 @@
+* Linked Lists
+
+Chapter 2 is about linked lists.
+
+** Problems
+
+1. remove duplicates from an unsorted linked list
+   1. bonus: do not use temp buffer
+2. find the k-th last element in a singly linked list
+3. delete a node in he middle of a linked list, given only access to that node
+4. partition a list around node X. All nodes less than X must come before 
+   node X, all nodes greater than X must come afer X.
+5. you have linked list of numbers 0-9 that represent digits in reverse order. so 467 is 7->6->4
+   write a method to add two of these list-numbers.
+   1. bonus: write method where the lists are not in reverse order.
+6. given a circular linked list, print the node that begins the loop
+7. determine if a linked list is a palindrome.
+
