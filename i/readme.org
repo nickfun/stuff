@@ -33,3 +33,12 @@ java Three <str_a1> <str_a2> <str_b1> <str_b2>
 The way I convert a String to an ArrayList is likely not the best. 
 I need to become more familiar with the Java standard library. I am sure
 there is a more efficent way to convert an array to an ArrayList<Character>.
+
+* Rest of section 1
+
+- 1.4 replace all spaces in a string with =%20=, assume array of chars for string & it has enough space
+- 1.5 basic string comparison with counts of repeate characters. input: aaaaabbbc output: a5b3c1
+- 1.6 given image as an NxN array, each pixel is 4 bytes, rotate image by 90 degress. challege: in-place rotation
+- 1.7 if an element in a MxN matrix is zero, set the entire row & column to zero.
+- 1.8 given isSubstring, determine if one string is a rotation of another, only one call to isSubstring
+
