@@ -1,5 +1,9 @@
 /**
+ * Nick F
+ * 2014-08-30 19:05:00 PST
  * 7 if an element in a MxN matrix is zero, set the entire row & column to zero.
+ * CTCI 1.7
+ * @TODO work on MxN, not MxM matrix!!!
  */
 
 import java.util.*;
