@@ -16,7 +16,28 @@ public class Index {
                 }
             }
             );
-        // the end?
+
+        get( new Route("/test") {
+                @Override
+                public Object handle(Request req, Response res) {
+                    System.out.println("Request: /test");
+                    return "<h1>This is the <code>/test</code> resource</h1>";
+                }
+            });
+        // end route defintions
+        after( new Filter("/") {
+                @Override
+                public void handle(Request req, Response res) {
+                    res.header("x-x-powered-by","SparkWeb - after filter /");
+                }
+            });
+        after( new Filter() {
+                @Override
+                public void handle(Request req, Response res) {
+                    res.header("x-nickfun","This filter should match all requests");
+                }
+            });
+        // done
     }
 }
 
