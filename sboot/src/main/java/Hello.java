@@ -5,15 +5,17 @@ import org.springframework.boot.autoconfigure.*;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.boot.context.embedded.*;
+import org.springframework.context.annotation.ComponentScan;
 
 @Controller
 @EnableAutoConfiguration
+@ComponentScan
 public class Hello {
 
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "Hello, World! This is my Sprin Boot thing :-)";
+        return "Hello, World! This is my Spring Boot thing :-)";
     }
 
     public static void main( String[] args) throws Exception {
