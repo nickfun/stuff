@@ -69,29 +69,29 @@
 	  <target>1.7</target>
 	</configuration>
       </plugin>
-
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-assembly-plugin</artifactId>
-	<version>2.4</version>
-	<configuration>
+      <!--
+          <plugin>
+	  <groupId>org.apache.maven.plugins</groupId>
+	  <artifactId>maven-assembly-plugin</artifactId>
+	  <version>2.4</version>
+	  <configuration>
 	  <finalName>full</finalName>
 	  <descriptorRefs>
-	    <descriptorRef>jar-with-dependencies</descriptorRef>
+	  <descriptorRef>jar-with-dependencies</descriptorRef>
 	  </descriptorRefs>
           <mainClass>gs.nick.Hello</mainClass>
-	</configuration>
-	<executions>
+	  </configuration>
+	  <executions>
 	  <execution>
-	    <id>assemble-all</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>single</goal>
-	    </goals>
+	  <id>assemble-all</id>
+	  <phase>package</phase>
+	  <goals>
+	  <goal>single</goal>
+	  </goals>
 	  </execution>
-	</executions>
-      </plugin>
-
+	  </executions>
+          </plugin>
+      -->
     </plugins>
   </build>
 

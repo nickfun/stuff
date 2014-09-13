@@ -14,8 +14,14 @@ public class Hello {
 
     @RequestMapping("/")
     @ResponseBody
-    String home() {
+    String index() {
         return "Hello, World! This is my Spring Boot thing :-)";
+    }
+
+    @RequestMapping("/hello")
+    @ResponseBody
+    String hello() {
+        return "This is the <code>/hello</code> resource!";
     }
 
     public static void main( String[] args) throws Exception {

@@ -10,9 +10,15 @@ import org.springframework.boot.context.embedded.*;
 public class MyConfig implements EmbeddedServletContainerCustomizer {
     @Override
     public void customize(ConfigurableEmbeddedServletContainer con) {
+        if (System.getenv("PORT") == null) {
+            System.out.println("");
+            System.out.println("PORT IS NULL! FALLBACK TO DEFAULT!!");
+            System.out.println("");
+            return;
+        }
         int port = Integer.parseInt(System.getenv("PORT"));
         System.out.println("");
-        System.out.println("PORT IS: " + port);
+        System.out.println("gs.nick.MyConfig SETTING PORT: " + port);
         System.out.println("");
         con.setPort( port );
     }
