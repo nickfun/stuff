@@ -29,3 +29,7 @@
   myvec
   (filter four?)
   (map double))
+
+(def blocks
+  (-> "BO XK DQ CP NA GT" (.split " ") vec))
+
