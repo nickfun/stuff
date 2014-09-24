@@ -22,7 +22,7 @@ public class Deck {
     }
 
     public String toString() {
-        return deck.toString();
+        return deck.size() + " - " + deck.toString();
     }
 }  
 
