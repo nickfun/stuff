@@ -25,10 +25,9 @@
 
 (defn x2 [x] (* 2 x))
 
-(->>
-  myvec
-  (filter four?)
-  (map x2))
+(->> myvec
+     (filter four?)
+     (map x2))
 
 (def blocks
   (-> "BO XK DQ CP NA GT" (.split " ") vec))
