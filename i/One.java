@@ -21,7 +21,6 @@ class One {
     /** Determine if a string has only unique characters */
     public static boolean isUniqueChars(String str) {
         char[] letters = str.toCharArray();
-        Integer count;
         HashSet<Character> set = new HashSet<>();
         for (char c : letters) {
             if (set.contains(c)) {
@@ -32,7 +31,7 @@ class One {
         return true;
     }
 
-    /** Determie if a string has only unique chars, do not use extra data structure */
+    /** Determine if a string has only unique chars, do not use extra data structure */
     public static boolean isUniqueCharsNoMap(String str) {
         char[] letters = str.toCharArray();
         char test;
