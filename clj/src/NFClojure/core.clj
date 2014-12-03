@@ -23,9 +23,12 @@
 
 (defn four? [x] (= 0 (mod x 4)))
 
-(defn double [x] (* 2 x))
+(defn x2 [x] (* 2 x))
 
-(->>
-  myvec
-  (filter four?)
-  (map double))
+(->> myvec
+     (filter four?)
+     (map x2))
+
+(def blocks
+  (-> "BO XK DQ CP NA GT" (.split " ") vec))
+

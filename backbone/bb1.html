@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BackBone Router Test</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.1.0/backbone.marionette.min.js"></script>
+    <meta charset="utf-8">
+    <style>
+      #contents { color: red; }
+    </style>
+  </head>
+  <body>
+    <h1>bb1</h1>
+    <div id="contents">hello contents</div>
+
+    <script type="text/javascript">
+      var app = new Marionette.Application();
+    </script>
+
+    <script type="text/template" id="tpl-item">
+      <span class="name"><%- name %></span>
+      <span class="power"><%- power %></span>
+      <ul><% _.each(moves, function(m){ %>
+        <li><%- m %></li>
+        <% }); %>
+      </ul>
+    </script>
+
+  </body>
+</html>
