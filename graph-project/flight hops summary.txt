@@ -1,0 +1,69 @@
+50: Abidjan, Cote d'Ivoire to Abu Dhabi, United Arab Emirates
+216: Accra, Ghana to Adelaide, Australia
+0: Amman, Jordan to Amsterdam, The Netherlands
+26: Asuncion, Paraguay to Athens, Greece
+285: Atlanta, United States to Auckland, New Zealand
+0: Bandar Seri Begawan, Brunei to Bangalore, India
+0: Bangkok, Thailand to Barcelona, Spain
+0: Beijing, People's Republic of China to Beirut, Lebanon
+0: Berlin, Germany to Birmingham, United Kingdom
+150: Blantyre, Malawi to Bogot, Colombia
+189: Boston, United States to Bratislava, Slovakia
+184: Brisbane, Australia to Brussels, Belgium
+129: Bucharest, Romania to Budapest, Hungary
+433: Buenos Aires, Argentina to Cairo, Egypt
+0: Calgary, Canada to Caracas, Venezuela
+23: Casablanca, Morocco to Chennai, India
+739: Chicago, United States to Cleveland, United States
+76: Colombo, Sri Lanka to Copenhagen, Denmark
+836: Dakar, Senegal to Denver, United States
+35: Detroit, United States to Dhaka, Bangladesh
+269: Douala, Cameroon to Dubai, United Arab Emirates
+21: Dublin, Ireland to Dusseldorf, Germany
+414: Frankfurt, Germany to Geneva, Switzerland
+56: Glasgow, United Kingdom to Guatemala City, Guatemala
+28: Hamburg, Germany to Hanoi, Vietnam
+98: Harare, Zimbabwe to Helsinki, Finland
+78: Ho Chi Minh City, Vietnam to Hong Kong, SAR
+7: Honolulu, United States to Houston, United States
+255: Istanbul, Turkey to Jakarta, Indonesia
+34: Jeddah, Saudi Arabia to Johannesburg, South Africa
+154: Karachi, Pakistan to Kiev, Ukraine
+134: Kingston, Jamaica to Kuala Lumpur, Malaysia
+52: Kuwait City, Kuwait to Lagos, Nigeria
+86: Leipzig, Germany to Lima, Peru
+216: Limassol, Cyprus to Lisbon, Portugal
+33: Ljubljana, Slovenia to London, United Kingdom
+0: Los Angeles, United States to Lusaka, Zambia
+33: Luxembourg, Luxembourg to Lyon, France
+257: Manama, Bahrain to Manila, Philippines
+191: Melbourne, Australia to Mexico City, Mexico
+92: Miami, United States to Milan, Italy
+48: Monterrey, Mexico to Montevideo, Uruguay
+73: Montreal, Canada to Morristown, United States
+0: Moscow, Russia to Mumbai, India
+62: Munich, Germany to Nairobi, Kenya
+25: New Delhi, India to New York City, United States
+203: Osaka, Japan to Oslo, Norway
+0: Ottawa, Canada to Panama City, Panama
+75: Paris, France to Perth, Australia
+204: Pittsburgh, United States to Portland, United States
+111: Prague, Czech Republic to Quito, Ecuador
+46: Riga, Latvia to Rio de Janeiro, Brazil
+187: Riyadh, Saudi Arabia to Rome, Italy
+0: San Francisco, United States to San Jose, Costa Rica
+10: San Juan, Puerto Rico to Santiago, Chile
+157: Santo Domingo, Dominican Republic to Sao Paulo, Brazil
+42: Seattle, United States to Seoul, South Korea
+65: Shanghai, People's Republic of China to Shenzhen, People's Republic of China
+4: Singapore, Singapore to Sofia, Bulgaria
+95: St. Louis, United States to St. Petersburg, Russia
+435: Stockholm, Sweden to Sydney, Australia
+0: Taipei, Taiwan to Tallinn, Estonia
+4: Tehran, Iran to Tel Aviv, Israel
+0: Tianjin, People's Republic of China to Tokyo, Japan
+508: Toronto, Canada to Tunis, Tunisia
+0: Vancouver, Canada to Vienna, Austria
+0: Vilnius, Lithuania to Warsaw, Poland
+383: Washington, United States to Wellington, New Zealand
+127: White Plains, United States to Winston-Salem, United States
