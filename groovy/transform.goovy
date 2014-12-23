@@ -1,0 +1,34 @@
+// Groovy has a lot of power but do I have enough time to learn it??
+
+def transform(List elements, Closure action) {
+    def results = []
+    elements.each {
+      results << action(it)
+      println("and result is: " + action(it))
+    }
+    results
+}
+
+String describe(Person p) {
+  "$p.name is $p.age old"
+}
+
+class Person {
+  public String name
+  public int age
+}
+
+def mylist = [
+  new Person(name: "Nick", age: 30),
+  new Person(name: "Jason", age: 31)
+]
+
+def newList = transform(mylist, this.&describe)
+
+/*
+println("list is ")
+println(mylist)
+pritnln("New list is")
+println(newList)
+*/
+
