@@ -18,3 +18,18 @@
 ; This adds more line breaks than I expect :(
 (printrr data1)
 (printrr data2)
+
+
+
+(setq max 100)
+(setq i 0)
+(setq buff '())
+(while
+    (< i max)
+  (setq i (+ 1 i))
+  (add-to-list 'buff (random 999)))
+
+(print buff)
+
+(printrr buff)
+
