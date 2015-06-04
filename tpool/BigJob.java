@@ -5,9 +5,8 @@ public class BigJob implements Callable<String> {
 
     public String call() throws Exception {
         int n = ThreadLocalRandom.current().nextInt(500);
-        n = 500;
-        Thread.sleep(500+n);
-        System.out.print("**");
-        return "" + (500+n);
+        Thread.sleep(1000+n);
+        System.out.print("BB");
+        return "" + (1000+n);
     }
 }

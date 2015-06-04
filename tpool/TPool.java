@@ -42,7 +42,7 @@ public class TPool {
 
     public void execute() throws Exception {
         int NUM_JOBS = 20; // this many of each TYPE of job will be created
-        int NUM_THREADS = NUM_JOBS / 3;
+        int NUM_THREADS = NUM_JOBS / 4;
         ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
         List<Callable<String>> jobs = new ArrayList<>();
         List<Future<String>> answers;
@@ -51,7 +51,7 @@ public class TPool {
             jobs.add( new MediumJob() );
         }
         System.out.println("wait");
-        System.out.println(String.format("Jobs: %d  Threads: %d", NUM_JOBS, NUM_THREADS));
+        System.out.println(String.format("Jobs: %d  Threads: %d", jobs.size(), NUM_THREADS));
         Thread.sleep(1000);
         System.out.println("GO!");
         answers = pool.invokeAll(jobs);
