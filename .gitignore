@@ -7,3 +7,5 @@ target/
 *#
 vendor/
 venv/
+resources/
+test/
